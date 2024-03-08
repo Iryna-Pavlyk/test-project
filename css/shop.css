@@ -1,0 +1,117 @@
+/* Scroll */
+/* width */
+.scroll::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.scroll::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.scroll::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.scroll::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* /Scroll */
+
+/* General */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: Snow;
+}
+
+.container {
+  padding: 16px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* /General */
+
+/* Section Shops */
+
+.section-shops {
+  border: 1px solid grey;
+  border-radius: 6px;
+  background-color: WhiteSmoke;
+  width: 200px;
+  padding: 20px;
+  margin-right: 50px;
+}
+
+.title-shops {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.shops-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.item-shops {
+  border: 1px solid grey;
+  border-radius: 6px;
+  background-color: Snow;
+  font-size: 20px;
+  width: 150px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* /Section Shops */
+
+/* Section Drugs*/
+
+.section-drugs {
+  border: 1px solid grey;
+  border-radius: 6px;
+  background-color: WhiteSmoke;
+  padding: 20px;
+  width: 1200px;
+}
+
+.drugs-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  gap: 70px;
+}
+
+.drugs-item {
+  border: 1px solid grey;
+  border-radius: 6px;
+  background-color: DarkGoldenrod;
+  font-size: 20px;
+  width: 400px;
+}
+
+.drugs-item-btn {
+  font-family: inherit;
+  font-size: 16px;
+  border: 1px solid snow;
+  border-radius: 4px;
+  width: 120px;
+  padding: 10px 5px;
+  margin-left: 270px;
+  margin-bottom: 10px;
+  background-color: snow;
+}
+
+/* /Section Drugs */
