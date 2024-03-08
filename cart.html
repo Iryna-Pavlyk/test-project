@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <section class="section-form-cart">
+                <form>
+                    <label class="label-form-cart">Name:<input class="cart-form-field" type="text"
+                            name="user_name"></label>
+                    <label class="label-form-cart">Email:<input class="cart-form-field" type="email"
+                            name="user_email"></label>
+                    <label class="label-form-cart">Pnone:<input class="cart-form-field" type="tel" name="user_phone"
+                            required></label>
+                    <label class="label-form-cart">Address:<input class="cart-form-field" type="text"
+                            name="user_address" title="test@gmail.com"></label>
+                </form>
+            </section>
+
+            <section>
+                <ul class="total-list-cart"></ul>
+                <p>Total price: <span></span></p>
+                <button type="submit">Submit</button>
+            </section>
+        </div>
+    </div>
+
+    <script type="module" src="./js/cart.js"></script>
+</body>
+
+</html>
