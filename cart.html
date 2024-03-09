@@ -10,26 +10,31 @@
 
 <body>
     <div class="container">
-        <div>
+        <div class="wrapper-cart">
             <section class="section-form-cart">
                 <form>
-                    <label class="label-form-cart">Name:<input class="cart-form-field" type="text"
-                            name="user_name"></label>
-                    <label class="label-form-cart">Email:<input class="cart-form-field" type="email"
-                            name="user_email"></label>
+                    <label class="label-form-cart">Name:<input class="cart-form-field" type="text" name="user_name"
+                            placeholder="Iryna" pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐйЙ']+" title="Iryna"></label>
+                    <label class="label-form-cart">Email:<input class="cart-form-field" type="email" name="user_email"
+                            title="test@gmail.com" placeholder="test@gmail.com"></label>
                     <label class="label-form-cart">Pnone:<input class="cart-form-field" type="tel" name="user_phone"
-                            required></label>
+                            placeholder="+38 096 111 11 11" required></label>
                     <label class="label-form-cart">Address:<input class="cart-form-field" type="text"
-                            name="user_address" title="test@gmail.com"></label>
+                            name="user_address" placeholder="st. Khreshatyk, 1/1"></label>
                 </form>
             </section>
 
-            <section>
+            <section class="section-cart">
                 <ul class="total-list-cart"></ul>
-                <p>Total price: <span></span></p>
-                <button type="submit">Submit</button>
             </section>
+
         </div>
+
+        <section class="section-submit">
+            <p class="total-price-text">Total price: <span></span></p>
+            <button class="btn-submit-cart" type="submit">Submit</button>
+        </section>
+
     </div>
 
     <script type="module" src="./js/cart.js"></script>

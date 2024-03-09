@@ -32,7 +32,7 @@
 /* Section Shops */
 
 .section-shops {
-  border: 1px solid grey;
+  border: 1px solid WhiteSmoke;
   border-radius: 6px;
   background-color: WhiteSmoke;
   width: 200px;
@@ -54,7 +54,7 @@
 }
 
 .item-shops {
-  border: 1px solid grey;
+  border: 1px solid Snow;
   border-radius: 6px;
   background-color: Snow;
   font-size: 20px;
@@ -70,7 +70,7 @@
 /* Section Drugs*/
 
 .section-drugs {
-  border: 1px solid grey;
+  border: 1px solid WhiteSmoke;
   border-radius: 6px;
   background-color: WhiteSmoke;
   padding: 20px;
@@ -109,6 +109,10 @@
   margin-left: 270px;
   margin-bottom: 10px;
   background-color: snow;
+}
+
+.drugs-item-btn:hover {
+  background-color: MintCream;
 }
 
 /* /Section Drugs */
