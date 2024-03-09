@@ -1,6 +1,6 @@
+import { list } from "./cart.js";
 const drugsList = document.querySelector(".drugs-list");
-const drugsItem = document.querySelector(".drugs-item");
-const list = document.querySelector(".list");
+// const drugsItem = document.querySelector(".drugs-item");
 const localeStorageKey = "key";
 
 drugsList.addEventListener("click", (event) => {
@@ -16,7 +16,6 @@ function getItem() {
   let markup = `<li class="drugs-item"><img src="./img/pill-min.jpg" alt="">
                             <h3 class="drugs-title">${localStorageValue}</h3>`;
   if (localStorageValue) {
-    return markup;
+    return list.insertAdjacentHTML("beforeend", markup);
   }
-  return list.insertAdjacentHTML("beforeend", markup);
 }
