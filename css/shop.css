@@ -36,7 +36,7 @@
   border-radius: 6px;
   background-color: WhiteSmoke;
   width: 200px;
-  padding: 20px;
+  padding: 30px;
   margin-right: 50px;
 }
 
@@ -82,7 +82,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding-top: 40px;
+  padding: 40px;
   gap: 70px;
 }
 
@@ -113,6 +113,7 @@
 
 .drugs-item-btn:hover {
   background-color: MintCream;
+  color: blue;
 }
 
 /* /Section Drugs */

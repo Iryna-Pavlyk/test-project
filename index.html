@@ -9,14 +9,101 @@
 </head>
 
 <body>
+  <div class="container">
 
-  <ul>
-    <li><a href="./shop.html">Shop</a></li>
-    <li><a href="./cart.html">Shopping cart</a></li>
-  </ul>
+    <nav>
+      <ul class="nav-list">
+        <li><a class="nav-link link" href="./index.html">Shop</a></li>
+        <span>|</span>
+        <li><a class="nav-link link" href="./index.html">Shopping cart</a></li>
+      </ul>
+    </nav>
+
+    <!-- Shop section -->
+
+    <div class="wrapper">
+      <section class="section-shops">
+        <h2 class="title-shops">Shops:</h2>
+        <ul class="shops-list">
+          <li class="item-shops link"><a href="">Drugs 24</a></li>
+          <li class="item-shops link"><a href="">Pharmacy</a></li>
+          <li class="item-shops link"><a href="">Podorozhnyk</a></li>
+          <li class="item-shops link"><a href="">Apteka 24</a></li>
+          <li class="item-shops link"><a href="">Dobrogo dnia</a></li>
+        </ul>
+      </section>
+      <section class="section-drugs">
+        <div class="scroll">
+          <ul class="drugs-list">
+            <li class="drugs-item"><img src="./img/pill-min.jpg" alt="">
+              <h3 class="drugs-title">Paracetamol</h3><button class="drugs-item-btn" type="button"
+                name="paracetamol">add
+                to
+                Cart</button>
+            </li>
+            <li class="drugs-item"><img src="./img/pill-min.jpg" alt="">
+              <h3 class="drugs-title">Citramonum</h3><button class="drugs-item-btn" type="button" name="citramonum">add
+                to
+                Cart</button>
+            </li>
+            <li class="drugs-item"><img src="./img/pill-min.jpg" alt="">
+              <h3 class="drugs-title">Aspirin</h3><button class="drugs-item-btn" type="button" name="aspirin">add to
+                Cart</button>
+            </li>
+            <li class="drugs-item"><img src="./img/pill-min.jpg" alt="">
+              <h3 class="drugs-title">Analginum</h3><button class="drugs-item-btn" type="button" name="analginum">add to
+                Cart</button>
+            </li>
+            <li class="drugs-item"><img src="./img/pill-min.jpg" alt="">
+              <h3 class="drugs-title">Cetrine</h3><button class="drugs-item-btn" type="button" name="cetrine">add to
+                Cart</button>
+            </li>
+            <li class="drugs-item"><img src="./img/pill-min.jpg" alt="">
+              <h3 class="drugs-title">Carboneum activatum</h3><button class="drugs-item-btn" type="button"
+                name="carboneum activatum">add to
+                Cart</button>
+            </li>
+          </ul>
+
+        </div>
+      </section>
+    </div>
+    <!-- /Shop section -->
+
+    <!-- Cart Section -->
+    <section class="section-cartt">
+      <div class="wrapper-section">
+        <div class="wrapper-cart">
+          <section class="section-form-cart">
+            <form>
+              <label class="label-form-cart">Name:<input class="cart-form-field" type="text" name="user_name"
+                  placeholder="Iryna" pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐйЙ']+" title="Iryna"></label>
+              <label class="label-form-cart">Email:<input class="cart-form-field" type="email" name="user_email"
+                  title="test@gmail.com" placeholder="test@gmail.com"></label>
+              <label class="label-form-cart">Pnone:<input class="cart-form-field" type="tel" name="user_phone"
+                  placeholder="+38 096 111 11 11" required></label>
+              <label class="label-form-cart">Address:<input class="cart-form-field" type="text" name="user_address"
+                  placeholder="st. Khreshatyk, 1/1"></label>
+            </form>
+          </section>
+
+          <section class="section-cart">
+            <ul class="total-list-cart"></ul>
+          </section>
+
+        </div>
+
+        <section class="section-submit">
+          <p class="total-price-text">Total price: <span></span></p>
+          <button class="btn-submit-cart" type="submit">Submit</button>
+        </section>
+      </div>
+    </section>
+    <!-- Cart Section -->
+  </div>
 
 
-
+  <script type="module" src="./js/main.js"></script>
 </body>
 
 </html>

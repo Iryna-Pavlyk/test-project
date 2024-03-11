@@ -1,12 +1,10 @@
-import { list } from "./cart.js";
 const drugsList = document.querySelector(".drugs-list");
-// const drugsItem = document.querySelector(".drugs-item");
+const list = document.querySelector(".total-list-cart");
 const localeStorageKey = "key";
 
 drugsList.addEventListener("click", (event) => {
   const values = event.target.name;
   localStorage.setItem(localeStorageKey, JSON.stringify(values));
-  //   console.log(values);
   getItem();
 });
 
