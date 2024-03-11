@@ -1,6 +1,5 @@
 const drugsList = document.querySelector(".drugs-list");
 const list = document.querySelector(".total-list-cart");
-const btnSubmit = document.querySelector(".btn-submit-cart");
 const formData = document.querySelector(".form-data");
 const BASE_URL = "https://65ef278dead08fa78a4fefb5.mockapi.io/contacts/data";
 const localeStorageKey = "key";
@@ -23,8 +22,12 @@ function getItem() {
 formData.addEventListener("input", inputHandler);
 
 async function inputHandler(event) {
-  const text = event.target.value;
-  await postData({ data: text });
+  try {
+    const text = event.target.value;
+    await postData({ data: text });
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 function postData(data) {
