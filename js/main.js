@@ -2,7 +2,7 @@ const drugsList = document.querySelector(".drugs-list");
 const list = document.querySelector(".total-list-cart");
 const btnSubmit = document.querySelector(".btn-submit-cart");
 const formData = document.querySelector(".form-data");
-const BASE_URL = "http://127.0.0.1:5500/index.html";
+const BASE_URL = "https://65ef278dead08fa78a4fefb5.mockapi.io/contacts/data";
 const localeStorageKey = "key";
 
 drugsList.addEventListener("click", (event) => {
@@ -22,30 +22,22 @@ function getItem() {
 
 formData.addEventListener("input", inputHandler);
 
-let values;
-function inputHandler(event) {
-  const name = event.target.value;
-  const email = event.target.value;
-  const phone = event.target.value;
-  const address = event.target.value;
-  values = [name, email, phone, address];
-  getData();
+async function inputHandler(event) {
+  const text = event.target.value;
+  await postData({ data: text });
 }
 
-function getData() {
-  fetch(BASE_URL).then((response) => {
+function postData(data) {
+  return fetch(BASE_URL, {
+    method: "POST",
+    body: JSON.stringify(data),
+    headers: {
+      "Content-Type": "application/json",
+    },
+  }).then((response) => {
     if (!response.ok) {
       throw new Error(response.statusText || response.status);
     }
     return response.json();
   });
 }
-
-// btnSubmit.addEventListener("submit", submitHandler);
-
-// function submitHandler(event) {
-//   event.preventDefault();
-//   getData();
-// }
-
-// function getData() {}
